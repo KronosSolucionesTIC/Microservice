@@ -1,0 +1,737 @@
+{
+	"info": {
+		"_postman_id": "8b8a3321-cbf7-4c9a-a932-bab30bf21b0c",
+		"name": "Microservicios - JAVA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12527115"
+	},
+	"item": [
+		{
+			"name": "Customer (Create)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Jose Lema\",\r\n    \"gender\":\"masculino\",\r\n    \"age\":34,\r\n    \"identification\":\"123456\",\r\n    \"address\":\"Otavalo sn y principal\",\r\n    \"phone\":\"098254785\",\r\n    \"password\":\"1234\",\r\n    \"status\":\"True\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{path_persons}}/clientes/create",
+					"host": [
+						"{{path_persons}}"
+					],
+					"path": [
+						"clientes",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Jose Lema",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Jose Lema\",\r\n    \"gender\":null,\r\n    \"age\":null,\r\n    \"identification\":null,\r\n    \"address\":\"Otavalo sn y principal\",\r\n    \"phone\":\"098254785\",\r\n    \"password\":\"1234\",\r\n    \"status\":\"True\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{path_persons}}/clientes/create",
+							"host": [
+								"{{path_persons}}"
+							],
+							"path": [
+								"clientes",
+								"create"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n    \"name\":\"Jose Lema\",\r\n    \"gender\":\"masculino\",\r\n    \"age\":34,\r\n    \"identification\":\"123456\",\r\n    \"address\":\"Otavalo sn y principal\",\r\n    \"phone\":\"098254785\",\r\n    \"password\":\"1234\",\r\n    \"status\":\"True\"\r\n}"
+				},
+				{
+					"name": "Marianela Montalvo",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Marianela Montalvo\",\r\n    \"gender\":null,\r\n    \"age\":null,\r\n    \"identification\":null,\r\n    \"address\":\"Amazonas y NNUU\",\r\n    \"phone\":\"097548965\",\r\n    \"password\":\"5678\",\r\n    \"status\":\"True\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{path_persons}}/clientes/create",
+							"host": [
+								"{{path_persons}}"
+							],
+							"path": [
+								"clientes",
+								"create"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n    \"name\":\"Jose Lema\",\r\n    \"gender\":\"masculino\",\r\n    \"age\":34,\r\n    \"identification\":\"123456\",\r\n    \"address\":\"Otavalo sn y principal\",\r\n    \"phone\":\"098254785\",\r\n    \"password\":\"1234\",\r\n    \"status\":\"True\"\r\n}"
+				},
+				{
+					"name": "Juan Osorio",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Juan Osorio\",\r\n    \"gender\":null,\r\n    \"age\":null,\r\n    \"identification\":null,\r\n    \"address\":\"13 junio y Equinoccial\",\r\n    \"phone\":\"098874587\",\r\n    \"password\":\"1245\",\r\n    \"status\":\"True\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{path_persons}}/clientes/create",
+							"host": [
+								"{{path_persons}}"
+							],
+							"path": [
+								"clientes",
+								"create"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n    \"name\":\"Jose Lema\",\r\n    \"gender\":\"masculino\",\r\n    \"age\":34,\r\n    \"identification\":\"123456\",\r\n    \"address\":\"Otavalo sn y principal\",\r\n    \"phone\":\"098254785\",\r\n    \"password\":\"1234\",\r\n    \"status\":\"True\"\r\n}"
+				}
+			]
+		},
+		{
+			"name": "Customer (List)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{path_persons}}/clientes/get",
+					"host": [
+						"{{path_persons}}"
+					],
+					"path": [
+						"clientes",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer (Find by id)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{path_persons}}/clientes/get/1",
+					"host": [
+						"{{path_persons}}"
+					],
+					"path": [
+						"clientes",
+						"get",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer (Update)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Jose Lema\",\r\n    \"gender\":null,\r\n    \"age\":null,\r\n    \"identification\":null,\r\n    \"address\":\"Otavalo sn y principal\",\r\n    \"phone\":\"098254785\",\r\n    \"password\":\"1234\",\r\n    \"status\":\"True\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{path_persons}}/clientes/update/1",
+					"host": [
+						"{{path_persons}}"
+					],
+					"path": [
+						"clientes",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer (Delete)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{path_persons}}/clientes/delete/1",
+					"host": [
+						"{{path_persons}}"
+					],
+					"path": [
+						"clientes",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account (Create)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountNumber\":\"42134\",\r\n    \"accountType\":\"Ahorro\",\r\n    \"balance\": 2000,\r\n    \"status\":\"True\",\r\n    \"customerId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{path_transactions}}/cuentas/create",
+					"host": [
+						"{{path_transactions}}"
+					],
+					"path": [
+						"cuentas",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "478758",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\":\"478758\",\r\n    \"accountType\":\"Ahorro\",\r\n    \"balance\": 2000,\r\n    \"status\":\"True\",\r\n    \"customerId\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{path_transactions}}/cuentas/create",
+							"host": [
+								"{{path_transactions}}"
+							],
+							"path": [
+								"cuentas",
+								"create"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "225487",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\":\"225487\",\r\n    \"accountType\":\"Corriente\",\r\n    \"balance\": 100,\r\n    \"status\":\"True\",\r\n    \"customerId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{path_transactions}}/cuentas/create",
+							"host": [
+								"{{path_transactions}}"
+							],
+							"path": [
+								"cuentas",
+								"create"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "495878",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\":\"495878\",\r\n    \"accountType\":\"Ahorros\",\r\n    \"balance\": 0,\r\n    \"status\":\"True\",\r\n    \"customerId\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{path_transactions}}/cuentas/create",
+							"host": [
+								"{{path_transactions}}"
+							],
+							"path": [
+								"cuentas",
+								"create"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "496825",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\":\"496825\",\r\n    \"accountType\":\"Ahorros\",\r\n    \"balance\": 540,\r\n    \"status\":\"True\",\r\n    \"customerId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{path_transactions}}/cuentas/create",
+							"host": [
+								"{{path_transactions}}"
+							],
+							"path": [
+								"cuentas",
+								"create"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "585545",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\":\"585545\",\r\n    \"accountType\":\"Corriente\",\r\n    \"balance\": 1000,\r\n    \"status\":\"True\",\r\n    \"customerId\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{path_transactions}}/cuentas/create",
+							"host": [
+								"{{path_transactions}}"
+							],
+							"path": [
+								"cuentas",
+								"create"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Account (List)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{path_transactions}}/cuentas/get",
+					"host": [
+						"{{path_transactions}}"
+					],
+					"path": [
+						"cuentas",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account (Find by id)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{path_transactions}}/cuentas/get/1",
+					"host": [
+						"{{path_transactions}}"
+					],
+					"path": [
+						"cuentas",
+						"get",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account (Update)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountNumber\":\"478758\",\r\n    \"accountType\":\"Ahorro\",\r\n    \"balance\": 2000,\r\n    \"status\":\"True\",\r\n    \"customerId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{path_transactions}}/cuentas/update/1",
+					"host": [
+						"{{path_transactions}}"
+					],
+					"path": [
+						"cuentas",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account (Delete)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{path_transactions}}/cuentas/delete/1",
+					"host": [
+						"{{path_transactions}}"
+					],
+					"path": [
+						"cuentas",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movement (Create)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountId\":1,\r\n    \"date\":\"2024-01-15\",\r\n    \"movementType\":\"Deposito\",\r\n    \"amount\":5000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{path_transactions}}/movimientos/create",
+					"host": [
+						"{{path_transactions}}"
+					],
+					"path": [
+						"movimientos",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "478758 - Retiro de 575",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountId\":1,\r\n    \"date\":\"2024-01-15\",\r\n    \"movementType\":\"Retiro\",\r\n    \"amount\":-575\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{path_transactions}}/movimientos/create",
+							"host": [
+								"{{path_transactions}}"
+							],
+							"path": [
+								"movimientos",
+								"create"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "225487 - Deposito de 600",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountId\":2,\r\n    \"date\":\"2022-02-10\",\r\n    \"movementType\":\"Deposito\",\r\n    \"amount\":600\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{path_transactions}}/movimientos/create",
+							"host": [
+								"{{path_transactions}}"
+							],
+							"path": [
+								"movimientos",
+								"create"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "495878 - Deposito de 150",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountId\":3,\r\n    \"date\":\"2024-01-15\",\r\n    \"movementType\":\"Deposito\",\r\n    \"amount\":150\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{path_transactions}}/movimientos/create",
+							"host": [
+								"{{path_transactions}}"
+							],
+							"path": [
+								"movimientos",
+								"create"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "496825 - Retiro de 540",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountId\":4,\r\n    \"date\":\"2022-02-08\",\r\n    \"movementType\":\"Retiro\",\r\n    \"amount\":-540\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{path_transactions}}/movimientos/create",
+							"host": [
+								"{{path_transactions}}"
+							],
+							"path": [
+								"movimientos",
+								"create"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Movement (List)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{path_transactions}}/movimientos/get",
+					"host": [
+						"{{path_transactions}}"
+					],
+					"path": [
+						"movimientos",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movement (Find by id)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{path_transactions}}/movimientos/get/1",
+					"host": [
+						"{{path_transactions}}"
+					],
+					"path": [
+						"movimientos",
+						"get",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movement (Update)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountId\":2,\r\n    \"date\":\"2022-02-10\",\r\n    \"movementType\":\"Deposito\",\r\n    \"amount\":600\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{path_transactions}}/movimientos/update/1",
+					"host": [
+						"{{path_transactions}}"
+					],
+					"path": [
+						"movimientos",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movement (Delete)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{path_transactions}}/movimientos/delete/1",
+					"host": [
+						"{{path_transactions}}"
+					],
+					"path": [
+						"movimientos",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report (Account status)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{path_transactions}}/reportes?customerId=2&startDate=2022-02-08&endDate=2022-02-10",
+					"host": [
+						"{{path_transactions}}"
+					],
+					"path": [
+						"reportes"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "2"
+						},
+						{
+							"key": "startDate",
+							"value": "2022-02-08"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-02-10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="microservice-transactions" />
+        <module name="microservice-persons" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="microservice-persons" target="17" />
+      <module name="microservice-transactions" target="17" />
+      <module name="microservicePersons" target="17" />
+      <module name="microserviceTransactions" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="microservice-persons" options="-parameters" />
+      <module name="microservice-transactions" options="-parameters" />
+      <module name="microservicePersons" options="-parameters" />
+      <module name="microserviceTransactions" options="-parameters" />
+    </option>
+  </component>
+</project>
